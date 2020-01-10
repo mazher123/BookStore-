@@ -1,0 +1,41 @@
+<!doctype>
+<html>
+    <head></head>
+<body>
+<table width="300px" >
+		<tr>
+			<td width="35%">bookname</td>
+			<td width="2%">:</td>
+			<td><%=bookname%></td>
+		</tr>
+		<tr>
+			<td>authors name</td>
+			<td width="2%">:</td>
+			<td><%=authorsname%></td>
+		</tr>
+		<tr>
+			<td>description</td>
+			<td width="2%">:</td>
+			<td><%=description%></td>
+		</tr>
+    <tr>
+			<td>price</td>
+			<td width="2%">:</td>
+			<td><%=price%></td>
+		</tr>
+    <tr>
+			<td>category</td>
+			<td width="2%">:</td>
+			<td><%=catagory%></td>
+		</tr>
+	</table>
+	<br><br>
+	<b>Are you sure? This can't be undone of you click confirm!</b>
+
+	<form action="/admin/bookdelete/<%=id %>" method="post">
+			<input type="hidden" name="uid" value="<%=id%>"/>
+			<input type="submit" name="delete" value="Confirm"/>
+	</form>
+    
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head></head>
+<body>
+<div class="col-sm-12">
+      <form  action="/admin/bookedit/<%=id %>" method="post">
+     
+           <p>book name : </p>
+           <input type="text" name="bname" value='<%=bookname%>'>
+           <br>
+           <p>author name : </p>
+           <input type="text" name="aname" value='<%=authorsname%>'>
+           <br>
+          
+           <p> description : </p>
+           <input type="text" name="descript" value="<%=description%>">
+           <br>
+           <p>price : </p>
+           <input type="text" name="price" value="<%=price%>">
+           <br>
+           <p>category: </p>
+           <input type="text" name="cat" value="<%=catagory%>">
+           <br>
+           <input type="submit" value="save">
+          </form>
+      
+      </div>
+    </body>
+</html>

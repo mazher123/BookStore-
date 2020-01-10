@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+<link rel="stylesheet" href="/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/style.css" type="text/css">
+    
+
+    
+</head>  
+  <body class="container-fluid">  
+      
+      <div class='col-sm-12'>
+          <nav class="navbar navbar-expand-sm   navbar-light bg-light">
+       
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">add books</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="/admin/showbook">show books</a>
+            </li>
+           
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/showuser">show all users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/register">register admin</a>
+          </li>
+              <li class="nav-item">
+              <a class="nav-link" href="/admin/order">order given</a>
+            </li>
+              <li class="nav-item">
+            <a class="nav-link" href="/admin/myprofile">my profile</a>
+          </li>
+          
+          </ul>
+          <div class="social-part">
+             <li class="nav-item"> <a href="/admin/signout">sign out</a></li>
+          </div>
+        </div>
+      </nav>
+      
+      </div>
+      
+      <div class="col-sm-12">
+      <form  action="/admin/" method="post">
+     
+           <p>book name : </p>
+           <input type="text" name="bname">
+           <br>
+           <p>author name : </p>
+           <input type="text" name="aname">
+           <br>
+          
+           <p> description : </p>
+           <input type="text" name="descript">
+           <br>
+           <p>price : </p>
+           <input type="text" name="price">
+           <br>
+           <p>category: </p>
+           <input type="text" name="cat">
+           <br>
+           <input type="submit" value="save">
+          </form>
+      
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       <script type="text/javascript" src="/jquery-3.1.1.min.js"></script>
+    <!-- Jquery Link Part End Here -->
+    <!-- Javascript Link Part Start Here -->
+    <script type="text/javascript" src="/bootstrap.min.js"></script>
+    </body>
+</html>

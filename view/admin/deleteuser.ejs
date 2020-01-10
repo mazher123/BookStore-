@@ -1,0 +1,32 @@
+<!doctype>
+<html>
+    <head></head>
+<body>
+<table width="300px" >
+		<tr>
+			<td width="35%">username</td>
+			<td width="2%">:</td>
+			<td><%=username%></td>
+		</tr>
+		<tr>
+			<td>password</td>
+			<td width="2%">:</td>
+			<td><%=password%></td>
+		</tr>
+		<tr>
+			<td>type</td>
+			<td width="2%">:</td>
+			<td><%=type%></td>
+		</tr>
+   
+	</table>
+	<br><br>
+	<b>Are you sure? This can't be undone of you click confirm!</b>
+
+	<form action="/admin/userdelete/<%=id %>" method="post">
+			<input type="hidden" name="uid" value="<%=id%>"/>
+			<input type="submit" name="delete" value="Confirm"/>
+	</form>
+    
+    </body>
+</html>

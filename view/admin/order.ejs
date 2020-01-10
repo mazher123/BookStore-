@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+<link rel="stylesheet" href="/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/style.css" type="text/css">
+    
+
+    
+</head>  
+  <body class="container-fluid">  
+      
+      <div class="col-sm-12">
+          <nav class="navbar navbar-expand-sm   navbar-light bg-light">
+       
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/addbook">add books</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="">show books</a>
+            </li>
+           
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/showuser">show all users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/register">register admin</a>
+          </li>
+               <li class="nav-item">
+              <a class="nav-link" href="/admin/order">order given</a>
+            </li>
+              <li class="nav-item">
+            <a class="nav-link" href="/admin/myprofile">my profile</a>
+          </li>
+          
+          </ul>
+          <div class="social-part">
+             <li class="nav-item"> <a href="/admin/signout">sign out</a></li>
+          </div>
+        </div>
+      </nav>
+      
+      </div>
+      
+      <div class="col-sm-12">
+      
+      <table>
+          <tr><td>id</td>&nbsp;&nbsp;
+              <td>customer name
+              </td>&nbsp;&nbsp;&nbsp;
+              <td>book name</td>&nbsp;&nbsp;&nbsp;
+              <td>quantity</td>&nbsp;
+              <td>price</td>&nbsp;
+             <td>action</td>  
+            
+          </tr>
+          <% for(var i=0; i < uList.length; i++){ %>
+		<tr>
+			<td><%= uList[i].id %></td>
+			<td><%= uList[i].customername %></td>
+			<td><%= uList[i].bookname %></td>	
+            <td><%= uList[i].quantity %></td>
+            <td><%= uList[i].price %></td>
+            
+			<td>
+				<a href=""> approve</a> |
+				<a href=""> deny</a>
+			</td>
+		</tr>
+		<% } %>
+          <tr><td></td></tr>
+          <tr><td></td></tr>
+          
+          
+          
+      </table>
+      
+      
+      
+      </div>
+      
+      
+      
+      
+      
+      
+      
+       <script type="text/javascript" src="/jquery-3.1.1.min.js"></script>
+    <!-- Jquery Link Part End Here -->
+    <!-- Javascript Link Part Start Here -->
+    <script type="text/javascript" src="/bootstrap.min.js"></script>
+    </body>
+</html>
